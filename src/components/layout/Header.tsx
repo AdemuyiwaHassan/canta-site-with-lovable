@@ -46,7 +46,13 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold text-foreground"
           >
-            <span className="text-gradient">Canta</span>
+            <span className="text-gradient">
+              <img
+                src="/asset/whit-logo.svg"
+                alt="Canta Logo"
+                // className="w-8 h-8"
+              />
+            </span>
           </motion.div>
         </Link>
 

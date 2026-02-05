@@ -31,7 +31,7 @@ const pageVariants = {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-primary/50">
       <Header />
       <motion.main
         variants={pageVariants}
