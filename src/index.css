@@ -38,55 +38,55 @@
 /* Canta Dark Fintech Theme */
 @layer base {
   :root {
-    --background: hsla(208, 100%, 97%, 1);
-    --foreground: 0 0% 98%;
+    --background: 240 10% 96%;
+    --foreground: 0 0% 2%;
 
-    --card: 240 10% 6%;
-    --card-foreground: 0 0% 98%;
+    --card: 240 10% 94%;
+    --card-foreground: 0 0% 2%;
 
-    --popover: 240 10% 6%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 240 10% 94%;
+    --popover-foreground: 0 0% 2%;
 
-    --primary: 210 100% 35%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 210 100% 65%;
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 180 100% 90%;
-    --secondary-foreground: 240 10% 4%;
+    --secondary: 180 100% 10%;
+    --secondary-foreground: 240 10% 96%;
 
-    --muted: 240 5% 15%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 240 5% 85%;
+    --muted-foreground: 240 5% 35%;
 
-    --accent: 180 100% 90%;
-    --accent-foreground: 240 10% 4%;
+    --accent: 180 100% 10%;
+    --accent-foreground: 240 10% 96%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84% 40%;
+    --destructive-foreground: 0 0% 2%;
 
-    --success: 142 76% 36%;
-    --success-foreground: 0 0% 100%;
+    --success: 142 76% 64%;
+    --success-foreground: 0 0% 0%;
 
-    --border: 240 5% 18%;
-    --input: 240 5% 18%;
-    --ring: 210 100% 35%;
+    --border: 240 5% 82%;
+    --input: 240 5% 82%;
+    --ring: 210 100% 65%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 240 10% 5%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 210 100% 35%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 5% 15%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 240 5% 18%;
-    --sidebar-ring: 210 100% 35%;
+    --sidebar-background: 240 10% 95%;
+    --sidebar-foreground: 0 0% 2%;
+    --sidebar-primary: 210 100% 65%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 240 5% 85%;
+    --sidebar-accent-foreground: 0 0% 2%;
+    --sidebar-border: 240 5% 2%;
+    --sidebar-ring: 210 100% 65%;
 
     /* Custom gradient tokens */
     --gradient-primary: linear-gradient(
       135deg,
-      hsl(210, 100%, 35%) 0%,
-      hsl(180, 100%, 40%) 100%
+      hsl(210, 100%, 65%) 0%,
+      hsl(180, 100%, 60%) 100%
     );
-    --gradient-glow: 0 0 60px hsl(210, 100%, 35% / 0.4);
+    --gradient-glow: 0 0 60px hsl(210, 100%, 65% / 0.4);
   }
 
   .dark {

@@ -2,6 +2,8 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Download, Smartphone, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
+import { FaApple } from "react-icons/fa";
 
 const benefits = [
   "No hidden fees or charges",
@@ -18,7 +20,7 @@ const DownloadCTASection = () => {
     <section id="download" className="py-24 relative overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-background to-secondary/10" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           ref={ref}
@@ -38,7 +40,7 @@ const DownloadCTASection = () => {
               >
                 Get Started Today
               </motion.span>
-              
+
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -47,15 +49,15 @@ const DownloadCTASection = () => {
               >
                 Download the Canta App
               </motion.h2>
-              
+
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.4 }}
                 className="text-muted-foreground mb-8"
               >
-                Join over 100,000 users who trust Canta for their cross-border payments. 
-                Available on iOS and Android.
+                Join over 100,000 users who trust Canta for their cross-border
+                payments. Available on iOS and Android.
               </motion.p>
 
               {/* Benefits List */}
@@ -80,12 +82,21 @@ const DownloadCTASection = () => {
                 transition={{ delay: 0.6 }}
                 className="flex flex-wrap gap-4"
               >
-                <Button size="lg" className="bg-gradient-primary hover:opacity-90 gap-2">
-                  <Smartphone className="w-5 h-5" />
+                <Button
+                  size="lg"
+                  className="bg-gradient-primary hover:opacity-90 gap-2"
+                >
+                  {/* <Smartphone className="w-5 h-5" /> */}
+                  <FaApple className="w-5 h-5" />
                   App Store
                 </Button>
-                <Button size="lg" variant="outline" className="gap-2 border-border hover:bg-muted">
-                  <Smartphone className="w-5 h-5" />
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="gap-2 border-border hover:bg-muted"
+                >
+                  {/* <Smartphone className="w-5 h-5" /> */}
+                  <IoLogoGooglePlaystore className="w-5 h-5" />
                   Google Play
                 </Button>
               </motion.div>
@@ -101,31 +112,46 @@ const DownloadCTASection = () => {
               <div className="relative">
                 {/* Glow */}
                 <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-3xl transform scale-110" />
-                
+
                 {/* Phone Stack Effect */}
                 <div className="relative">
                   <motion.div
                     animate={{ rotate: [0, 2, 0] }}
-                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                    transition={{
+                      duration: 4,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
                     className="absolute inset-0 bg-card border border-border rounded-[2rem] transform rotate-6 translate-x-4"
                   />
                   <motion.div
                     animate={{ rotate: [0, -2, 0] }}
-                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                    transition={{
+                      duration: 4,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                      delay: 0.5,
+                    }}
                     className="absolute inset-0 bg-card border border-border rounded-[2rem] transform -rotate-3 -translate-x-2"
                   />
-                  
+
                   {/* Main Phone */}
                   <motion.div
                     animate={{ y: [0, -8, 0] }}
-                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
                     className="relative bg-card border-4 border-border rounded-[2rem] p-2 shadow-2xl"
                   >
                     <div className="w-56 h-[400px] bg-background rounded-[1.5rem] overflow-hidden flex flex-col items-center justify-center">
                       <div className="text-6xl mb-4">🌍</div>
                       <p className="text-lg font-bold text-gradient">Canta</p>
-                      <p className="text-sm text-muted-foreground mt-2">Money Without Borders</p>
-                      
+                      <p className="text-sm text-muted-foreground mt-2">
+                        Money Without Borders
+                      </p>
+
                       <div className="mt-8 flex gap-4">
                         <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
                           <Download className="w-6 h-6 text-primary" />
@@ -138,7 +164,11 @@ const DownloadCTASection = () => {
                 {/* Floating Badge */}
                 <motion.div
                   animate={{ y: [0, -10, 0], x: [0, 5, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
                   className="absolute -top-4 -right-4 bg-success text-success-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg"
                 >
                   Free Download
