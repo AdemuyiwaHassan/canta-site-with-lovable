@@ -10,12 +10,12 @@ export function ThemeToggle() {
     <Button
       variant="ghost"
       size="icon"
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       className="relative"
     >
       <motion.div
         initial={false}
-        animate={{ rotate: theme === "dark" ? 0 : 180, scale: 1 }}
+        animate={{ rotate: theme === "light" ? 180 : 0, scale: 1 }}
         transition={{ duration: 0.3 }}
       >
         <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
