@@ -27,20 +27,22 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    details: "support@canta.com",
+    details: "contact@canta.io",
     subtext: "We'll respond within 24 hours",
   },
   {
     icon: Phone,
     title: "Call Us",
-    details: "+234 800 123 4567",
+    details: "+234 703 215 5156",
     subtext: "Mon-Fri 9am-6pm WAT",
   },
   {
     icon: MapPin,
     title: "Visit Us",
-    details: "Victoria Island, Lagos",
-    subtext: "Nigeria",
+    details: `Plot 1 block, Marwa busstop,
+128 Remi Olowude St, Lekki Phase I,
+Lekki 105102`,
+    subtext: "Lagos, Nigeria",
   },
   {
     icon: Clock,
@@ -53,27 +55,33 @@ const contactInfo = [
 const faqs = [
   {
     question: "How long do transfers take?",
-    answer: "Most transfers are completed within minutes. However, depending on the destination country and payment method, some transfers may take up to 24 hours.",
+    answer:
+      "Most transfers are completed within minutes. However, depending on the destination country and payment method, some transfers may take up to 24 hours.",
   },
   {
     question: "What are your transfer fees?",
-    answer: "Our fees are among the lowest in the industry, typically ranging from 0.5% to 2% depending on the corridor and amount. We always show you the exact fee before you confirm your transfer.",
+    answer:
+      "Our fees are among the lowest in the industry, typically ranging from 0.5% to 2% depending on the corridor and amount. We always show you the exact fee before you confirm your transfer.",
   },
   {
     question: "Is Canta safe and secure?",
-    answer: "Absolutely! We use bank-grade encryption and are fully licensed and regulated. Your funds are protected, and we employ advanced fraud detection systems to keep your account secure.",
+    answer:
+      "Absolutely! We use bank-grade encryption and are fully licensed and regulated. Your funds are protected, and we employ advanced fraud detection systems to keep your account secure.",
   },
   {
     question: "Which countries can I send money to?",
-    answer: "Canta supports transfers to over 50 countries across Africa, Europe, North America, and Asia. We're constantly adding new destinations.",
+    answer:
+      "Canta supports transfers to over 50 countries across Africa, Europe, North America, and Asia. We're constantly adding new destinations.",
   },
   {
     question: "How do I verify my account?",
-    answer: "Account verification is simple. Just upload a valid government-issued ID and a proof of address. Most verifications are completed within 24 hours.",
+    answer:
+      "Account verification is simple. Just upload a valid government-issued ID and a proof of address. Most verifications are completed within 24 hours.",
   },
   {
     question: "What payment methods do you accept?",
-    answer: "We accept bank transfers, debit/credit cards, and mobile money in supported regions. You can also fund your wallet directly from your bank account.",
+    answer:
+      "We accept bank transfers, debit/credit cards, and mobile money in supported regions. You can also fund your wallet directly from your bank account.",
   },
 ];
 
@@ -123,7 +131,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section ref={heroRef} className="py-24 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -135,12 +143,11 @@ const Contact = () => {
               Get in Touch
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mt-3 mb-6">
-              We'd Love to{" "}
-              <span className="text-gradient">Hear From You</span>
+              We'd Love to <span className="text-gradient">Hear From You</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Have questions about Canta? Our team is here to help. Reach out to us 
-              through any of the channels below.
+              Have questions about Canta? Our team is here to help. Reach out to
+              us through any of the channels below.
             </p>
           </motion.div>
         </div>
@@ -183,28 +190,37 @@ const Contact = () => {
             >
               <h2 className="text-3xl font-bold mb-6">Send Us a Message</h2>
               <p className="text-muted-foreground mb-8">
-                Fill out the form below and we'll get back to you as soon as possible.
+                Fill out the form below and we'll get back to you as soon as
+                possible.
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium mb-2">Your Name</label>
+                    <label className="block text-sm font-medium mb-2">
+                      Your Name
+                    </label>
                     <Input
                       placeholder="John Doe"
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
                       required
                       className="bg-muted border-border"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-2">Email Address</label>
+                    <label className="block text-sm font-medium mb-2">
+                      Email Address
+                    </label>
                     <Input
                       type="email"
                       placeholder="john@example.com"
                       value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, email: e.target.value })
+                      }
                       required
                       className="bg-muted border-border"
                     />
@@ -212,22 +228,30 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2">Subject</label>
+                  <label className="block text-sm font-medium mb-2">
+                    Subject
+                  </label>
                   <Input
                     placeholder="How can we help?"
                     value={formData.subject}
-                    onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, subject: e.target.value })
+                    }
                     required
                     className="bg-muted border-border"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2">Message</label>
+                  <label className="block text-sm font-medium mb-2">
+                    Message
+                  </label>
                   <Textarea
                     placeholder="Tell us more about your inquiry..."
                     value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
                     required
                     rows={5}
                     className="bg-muted border-border resize-none"
@@ -265,7 +289,9 @@ const Contact = () => {
                     <div className="text-center">
                       <MapPin className="w-12 h-12 text-primary mx-auto mb-2" />
                       <p className="text-muted-foreground">Map Integration</p>
-                      <p className="text-sm text-muted-foreground">Victoria Island, Lagos</p>
+                      <p className="text-sm text-muted-foreground">
+                        Victoria Island, Lagos
+                      </p>
                     </div>
                   </div>
 

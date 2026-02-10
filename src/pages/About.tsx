@@ -14,30 +14,34 @@ const values = [
   {
     icon: Heart,
     title: "Customer First",
-    description: "Every decision we make starts with our users. Your success is our success.",
+    description:
+      "Every decision we make starts with our users. Your success is our success.",
   },
   {
     icon: Globe,
     title: "Borderless Finance",
-    description: "We believe money should move as freely as ideas. Geography shouldn't limit opportunity.",
+    description:
+      "We believe money should move as freely as ideas. Geography shouldn't limit opportunity.",
   },
   {
     icon: Users,
     title: "Community Driven",
-    description: "Built by Africans, for Africans. We understand the unique challenges of our continent.",
+    description:
+      "Built by Africans, for Africans. We understand the unique challenges of our continent.",
   },
   {
     icon: Award,
     title: "Excellence Always",
-    description: "We hold ourselves to the highest standards in security, speed, and service.",
+    description:
+      "We hold ourselves to the highest standards in security, speed, and service.",
   },
 ];
 
 const team = [
-  { name: "Oluwaseun Adeleke", role: "CEO & Founder", avatar: "OA" },
-  { name: "Amina Bello", role: "CTO", avatar: "AB" },
-  { name: "Kwesi Asante", role: "Head of Operations", avatar: "KA" },
-  { name: "Zainab Ibrahim", role: "Head of Compliance", avatar: "ZI" },
+  { name: "Samuel Iloama", role: "CEO & Founder", avatar: "SI" },
+  { name: "Ezekiel Oni", role: "CTO", avatar: "EO" },
+  { name: "Moyinoluwa Mayowa", role: "Head of Operations", avatar: "MM" },
+  { name: "Tolu Olugbemiro", role: "Customer Support", avatar: "TO" },
 ];
 
 const About = () => {
@@ -56,7 +60,7 @@ const About = () => {
       {/* Hero Section */}
       <section ref={heroRef} className="py-24 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -72,15 +76,19 @@ const About = () => {
               <span className="text-gradient">Connections</span> Across Africa
             </h1>
             <p className="text-lg text-muted-foreground">
-              Born from the vision of making cross-border payments accessible to every African, 
-              Canta is on a mission to connect the continent to the global economy—one transaction at a time.
+              Born from the vision of making cross-border payments accessible to
+              every African, Canta is on a mission to connect the continent to
+              the global economy—one transaction at a time.
             </p>
           </motion.div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section ref={statsRef} className="py-16 bg-card/50 border-y border-border">
+      <section
+        ref={statsRef}
+        className="py-16 bg-card/50 border-y border-border"
+      >
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -91,8 +99,12 @@ const About = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <p className="text-3xl md:text-4xl font-bold text-gradient">{stat.number}</p>
-                <p className="text-muted-foreground text-sm mt-2">{stat.label}</p>
+                <p className="text-3xl md:text-4xl font-bold text-gradient">
+                  {stat.number}
+                </p>
+                <p className="text-muted-foreground text-sm mt-2">
+                  {stat.label}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -116,14 +128,17 @@ const About = () => {
                 <h2 className="text-3xl font-bold">Our Mission</h2>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                We're building the financial infrastructure that Africa deserves. Traditional banking 
-                has long failed the African diaspora and businesses seeking to operate globally. 
-                High fees, slow transfers, and limited currency options have been the norm for too long.
+                We're building the financial infrastructure that Africa
+                deserves. Traditional banking has long failed the African
+                diaspora and businesses seeking to operate globally. High fees,
+                slow transfers, and limited currency options have been the norm
+                for too long.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Canta exists to change that. We've built a platform that combines cutting-edge 
-                technology with deep local expertise to deliver fast, affordable, and secure 
-                cross-border payments that work for everyone.
+                Canta exists to change that. We've built a platform that
+                combines cutting-edge technology with deep local expertise to
+                deliver fast, affordable, and secure cross-border payments that
+                work for everyone.
               </p>
             </motion.div>
 
@@ -143,13 +158,15 @@ const About = () => {
                   <h3 className="text-2xl font-bold">Our Vision</h3>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
-                  A world where every African has equal access to the global financial system. 
-                  Where sending money home is as easy as sending a message. Where businesses 
-                  can trade internationally without friction.
+                  A world where every African has equal access to the global
+                  financial system. Where sending money home is as easy as
+                  sending a message. Where businesses can trade internationally
+                  without friction.
                 </p>
                 <div className="mt-6 p-4 bg-muted rounded-xl">
                   <p className="text-sm italic text-muted-foreground">
-                    "We envision an Africa where financial borders are a thing of the past."
+                    "We envision an Africa where financial borders are a thing
+                    of the past."
                   </p>
                 </div>
               </div>
@@ -170,7 +187,9 @@ const About = () => {
             <span className="text-primary text-sm font-medium uppercase tracking-wider">
               What We Stand For
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-3">Our Core Values</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mt-3">
+              Our Core Values
+            </h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -186,7 +205,9 @@ const About = () => {
                   <value.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{value.title}</h3>
-                <p className="text-muted-foreground text-sm">{value.description}</p>
+                <p className="text-muted-foreground text-sm">
+                  {value.description}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -207,8 +228,9 @@ const About = () => {
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mt-3">Leadership</h2>
             <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-              Our diverse team brings together expertise in fintech, banking, and technology 
-              to deliver the best cross-border payment experience.
+              Our diverse team brings together expertise in fintech, banking,
+              and technology to deliver the best cross-border payment
+              experience.
             </p>
           </motion.div>
 
@@ -223,7 +245,9 @@ const About = () => {
                 className="p-6 bg-card border border-border rounded-2xl text-center hover:border-primary/50 transition-all"
               >
                 <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-primary">{member.avatar}</span>
+                  <span className="text-2xl font-bold text-primary">
+                    {member.avatar}
+                  </span>
                 </div>
                 <h3 className="font-semibold">{member.name}</h3>
                 <p className="text-muted-foreground text-sm">{member.role}</p>

@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Download, UserPlus, CreditCard, Send } from "lucide-react";
+import { Download, UserPlus, Send, CircleCheckBig } from "lucide-react";
 
 const steps = [
   {
@@ -17,15 +17,16 @@ const steps = [
   },
   {
     step: 3,
-    icon: CreditCard,
-    title: "Add Payment Method",
-    description: "Link your bank account or card for seamless transactions.",
+    icon: CircleCheckBig,
+    title: "Complete your KYC",
+    description: "Complete your KYC for individual or business account.",
   },
   {
     step: 4,
     icon: Send,
     title: "Start Sending",
-    description: "Send money to loved ones across borders in just minutes.",
+    description:
+      "Send money to 50+ countries with low fees and real exchange rates.",
   },
 ];
 
@@ -51,7 +52,8 @@ const HowItWorksSection = () => {
             How Canta Works
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Get started in four easy steps and experience the simplest way to send money internationally.
+            Get started in four easy steps and experience the simplest way to
+            send money internationally.
           </p>
         </motion.div>
 
@@ -94,7 +96,11 @@ const HowItWorksSection = () => {
                   <div className="hidden lg:block absolute top-24 -right-4 transform translate-x-1/2">
                     <motion.div
                       animate={isInView ? { x: [0, 5, 0] } : {}}
-                      transition={{ duration: 1.5, repeat: Infinity, delay: index * 0.2 }}
+                      transition={{
+                        duration: 1.5,
+                        repeat: Infinity,
+                        delay: index * 0.2,
+                      }}
                       className="text-primary/50"
                     >
                       →

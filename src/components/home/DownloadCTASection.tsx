@@ -115,64 +115,14 @@ const DownloadCTASection = () => {
 
                 {/* Phone Stack Effect */}
                 <div className="relative">
-                  <motion.div
-                    animate={{ rotate: [0, 2, 0] }}
-                    transition={{
-                      duration: 4,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                    }}
-                    className="absolute inset-0 bg-card border border-border rounded-[2rem] transform rotate-6 translate-x-4"
+                  <img
+                    src="/asset/iphone2.svg"
+                    alt="Phone Mockup"
+                    width={240}
+                    height={20}
+                    className="mx-auto mt-2 rounded-sm"
                   />
-                  <motion.div
-                    animate={{ rotate: [0, -2, 0] }}
-                    transition={{
-                      duration: 4,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                      delay: 0.5,
-                    }}
-                    className="absolute inset-0 bg-card border border-border rounded-[2rem] transform -rotate-3 -translate-x-2"
-                  />
-
-                  {/* Main Phone */}
-                  <motion.div
-                    animate={{ y: [0, -8, 0] }}
-                    transition={{
-                      duration: 3,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                    }}
-                    className="relative bg-card border-4 border-border rounded-[2rem] p-2 shadow-2xl"
-                  >
-                    <div className="w-56 h-[400px] bg-background rounded-[1.5rem] overflow-hidden flex flex-col items-center justify-center">
-                      <div className="text-6xl mb-4">🌍</div>
-                      <p className="text-lg font-bold text-gradient">Canta</p>
-                      <p className="text-sm text-muted-foreground mt-2">
-                        Money Without Borders
-                      </p>
-
-                      <div className="mt-8 flex gap-4">
-                        <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
-                          <Download className="w-6 h-6 text-primary" />
-                        </div>
-                      </div>
-                    </div>
-                  </motion.div>
                 </div>
-
-                {/* Floating Badge */}
-                <motion.div
-                  animate={{ y: [0, -10, 0], x: [0, 5, 0] }}
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                  className="absolute -top-4 -right-4 bg-success text-success-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg"
-                >
-                  Free Download
-                </motion.div>
               </div>
             </motion.div>
           </div>
