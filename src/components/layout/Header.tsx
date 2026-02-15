@@ -82,7 +82,10 @@ const Header = () => {
         {/* CTA and Theme Toggle */}
         <div className="hidden md:flex items-center gap-2">
           <ThemeToggle />
-          <Button className="bg-gradient-primary hover:opacity-90 transition-opacity gap-2">
+          <Button
+            className="bg-primary hover:opacity-90 transition-opacity gap-2"
+            onClick={() => window.open("https://onelink.to/9mxca2", "_blank")}
+          >
             <Download className="w-4 h-4" />
             Download App
           </Button>

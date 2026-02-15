@@ -1,9 +1,11 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Download, Smartphone, CheckCircle } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { FaApple } from "react-icons/fa";
+import Lottie from "lottie-react";
+import Video from "./video.json";
 
 const benefits = [
   "No hidden fees or charges",
@@ -21,7 +23,7 @@ const DownloadCTASection = () => {
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-background to-secondary/10" />
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container  mx-auto px-4 relative z-10">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
@@ -82,18 +84,15 @@ const DownloadCTASection = () => {
                 transition={{ delay: 0.6 }}
                 className="flex flex-wrap gap-4"
               >
-                <Button
-                  size="lg"
-                  className="bg-gradient-primary hover:opacity-90 gap-2"
-                >
+                <Button size="lg" className="bg-primary hover:opacity-90 gap-2">
                   {/* <Smartphone className="w-5 h-5" /> */}
                   <FaApple className="w-5 h-5" />
                   App Store
                 </Button>
                 <Button
                   size="lg"
-                  variant="outline"
-                  className="gap-2 border-border hover:bg-muted"
+                  // variant="outline"
+                  className=" gap-2 border-border "
                 >
                   {/* <Smartphone className="w-5 h-5" /> */}
                   <IoLogoGooglePlaystore className="w-5 h-5" />
@@ -114,14 +113,20 @@ const DownloadCTASection = () => {
                 <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-3xl transform scale-110" />
 
                 {/* Phone Stack Effect */}
-                <div className="relative">
-                  <img
+                <div className="relative ">
+                  <Lottie
+                    animationData={Video}
+                    loop
+                    autoplay
+                    style={{ width: "15rem", height: "auto" }}
+                  />
+                  {/* <img
                     src="/asset/iphone2.svg"
-                    alt="Phone Mockup"
+                    alt="Phnpm one Mockup"
                     width={240}
                     height={20}
                     className="mx-auto mt-2 rounded-sm"
-                  />
+                  /> */}
                 </div>
               </div>
             </motion.div>

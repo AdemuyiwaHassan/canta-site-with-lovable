@@ -61,7 +61,7 @@ const HeroSection = () => {
               transition={{ delay: 0.5 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
-              <Button
+              {/* <Button
                 size="lg"
                 className="bg-gradient-primary hover:opacity-90 gap-2 text-base"
               >
@@ -75,7 +75,38 @@ const HeroSection = () => {
               >
                 Learn More
                 <ArrowRight className="w-5 h-5" />
-              </Button>
+              </Button> */}
+              <div
+                onClick={() =>
+                  window.open(
+                    "https://apps.apple.com/bf/app/canta/id1613803423",
+                    "_blank",
+                  )
+                }
+                className="flex items-center gap-2 px-4 py-2 bg-muted rounded-lg border border-border hover:border-primary/50 transition-colors cursor-pointer"
+              >
+                <FaApple />
+                <div className="text-left">
+                  <p className="text-xs text-muted-foreground">Download on</p>
+                  <p className="text-sm font-semibold">App Store</p>
+                </div>
+              </div>
+              <div
+                onClick={() =>
+                  window.open(
+                    "https://play.google.com/store/apps/details?id=com.canta.canta_app",
+                    "_blank",
+                  )
+                }
+                className="flex items-center gap-2 px-4 py-2 bg-muted rounded-lg border border-border hover:border-primary/50 transition-colors cursor-pointer"
+              >
+                <IoLogoGooglePlaystore />
+
+                <div className="text-left">
+                  <p className="text-xs text-muted-foreground">Get it on</p>
+                  <p className="text-sm font-semibold">Google Play</p>
+                </div>
+              </div>
             </motion.div>
 
             {/* App Store Badges */}
@@ -85,7 +116,7 @@ const HeroSection = () => {
               transition={{ delay: 0.6 }}
               className="flex gap-4 mt-8 justify-center lg:justify-start"
             >
-              <div className="flex items-center gap-2 px-4 py-2 bg-muted rounded-lg border border-border hover:border-primary/50 transition-colors cursor-pointer">
+              {/* <div className="flex items-center gap-2 px-4 py-2 bg-muted rounded-lg border border-border hover:border-primary/50 transition-colors cursor-pointer">
                 <FaApple />
                 <div className="text-left">
                   <p className="text-xs text-muted-foreground">Download on</p>
@@ -99,7 +130,7 @@ const HeroSection = () => {
                   <p className="text-xs text-muted-foreground">Get it on</p>
                   <p className="text-sm font-semibold">Google Play</p>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </motion.div>
 
@@ -132,7 +163,7 @@ const HeroSection = () => {
                 className="relative"
               >
                 <img
-                  src="/asset/iphone-animation.svg"
+                  src="/asset/iphone.png"
                   alt="iPhone Animation"
                   width={320}
                   height={20}

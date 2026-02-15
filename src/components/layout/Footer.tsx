@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { 
-  Facebook, 
-  Twitter, 
-  Instagram, 
-  Linkedin, 
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
   Mail,
   MapPin,
-  Phone
+  Phone,
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -33,10 +33,22 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
+  {
+    icon: Facebook,
+    href: "https://web.facebook.com/canta.global/",
+    label: "Facebook",
+  },
   { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  {
+    icon: Instagram,
+    href: "https://www.instagram.com/canta.global",
+    label: "Instagram",
+  },
+  {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/company/canta-services",
+    label: "LinkedIn",
+  },
 ];
 
 const Footer = () => {
@@ -49,22 +61,35 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <Link to="/" className="inline-block mb-6">
-              <span className="text-2xl font-bold text-gradient">Canta</span>
+              <span className="text-2xl font-bold text-gradient">
+                <img
+                  src="/asset/blue-logo.svg"
+                  alt="Canta Logo"
+                  className="h-6 w-auto"
+                />
+              </span>
             </Link>
             <p className="text-muted-foreground mb-6 max-w-sm">
-              Send money beyond Africa's borders with low fees, fast transactions, 
-              and complete security. Your trusted cross-border payment partner.
+              Send money beyond Africa's borders with low fees, fast
+              transactions, and complete security. Your trusted cross-border
+              payment partner.
             </p>
-            
+
             {/* Contact Info */}
             <div className="space-y-3">
-              <div className="flex items-center gap-3 text-muted-foreground">
+              <div
+                className="flex items-center gap-3 text-muted-foreground cursor-pointer hover:text-primary transition-colors"
+                onClick={() => window.open("mailto:contact@canta.io")}
+              >
                 <Mail className="w-4 h-4 text-primary" />
-                <span className="text-sm">support@canta.com</span>
+                <span className="text-sm">support@canta.io</span>
               </div>
-              <div className="flex items-center gap-3 text-muted-foreground">
+              <div
+                className="flex items-center gap-3 text-muted-foreground cursor-pointer hover:text-primary transition-colors"
+                onClick={() => window.open("tel:+2347032155156")}
+              >
                 <Phone className="w-4 h-4 text-primary" />
-                <span className="text-sm">+234 800 123 4567</span>
+                <span className="text-sm">+234 703 215 5156</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary" />
@@ -119,9 +144,7 @@ const Footer = () => {
                 placeholder="Enter your email"
                 className="bg-muted border-border"
               />
-              <Button className="bg-gradient-primary hover:opacity-90">
-                Subscribe
-              </Button>
+              <Button>Subscribe</Button>
             </div>
           </div>
         </div>
