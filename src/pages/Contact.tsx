@@ -261,7 +261,7 @@ const Contact = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-primary hover:opacity-90 gap-2"
+                  className="w-full  gap-2"
                 >
                   {isSubmitting ? (
                     "Sending..."

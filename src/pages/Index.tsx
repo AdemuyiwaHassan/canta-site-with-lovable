@@ -4,6 +4,7 @@ import FeaturesSection from "@/components/home/FeaturesSection";
 import HowItWorksSection from "@/components/home/HowItWorksSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import DownloadCTASection from "@/components/home/DownloadCTASection";
+import FaqSection from "@/components/home/FaqSection";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <HowItWorksSection />
       <TestimonialsSection />
       <DownloadCTASection />
+      <FaqSection />
     </Layout>
   );
 };
