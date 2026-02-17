@@ -41,7 +41,7 @@ const HeroSection = () => {
               transition={{ delay: 0.3 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
             >
-              Send Money <span className="text-gradient">Beyond Africa's</span>{" "}
+              Send Money <span className="text-primary">Beyond Africa's</span>{" "}
               Borders
             </motion.h1>
 

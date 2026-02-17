@@ -140,7 +140,7 @@ const Header = () => {
                 transition={{ delay: navLinks.length * 0.1 }}
                 className="pt-2"
               >
-                <Button className="w-full bg-gradient-primary gap-2">
+                <Button className="w-full gap-2">
                   <Download className="w-4 h-4" />
                   Download App
                 </Button>
