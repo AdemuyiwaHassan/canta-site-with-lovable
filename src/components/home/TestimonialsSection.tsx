@@ -61,7 +61,9 @@ const TestimonialsSection = () => {
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setCurrentIndex(
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length,
+    );
   };
 
   const visibleTestimonials = [
@@ -85,14 +87,15 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary text-sm font-medium uppercase tracking-wider">
+          <span className="text-[#66B2FF] text-sm font-medium uppercase tracking-wider">
             Testimonials
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mt-3 mb-4">
             Loved by Thousands
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            See what our users across Africa have to say about their experience with Canta.
+            See what our users across Africa have to say about their experience
+            with Canta.
           </p>
         </motion.div>
 
@@ -112,7 +115,7 @@ const TestimonialsSection = () => {
                   }`}
                 >
                   <Quote className="w-8 h-8 text-primary/30 mb-4" />
-                  
+
                   <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                     "{testimonial.text}"
                   </p>
@@ -120,7 +123,10 @@ const TestimonialsSection = () => {
                   {/* Rating */}
                   <div className="flex gap-1 mb-4">
                     {Array.from({ length: testimonial.rating }).map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                      <Star
+                        key={i}
+                        className="w-4 h-4 fill-primary text-primary"
+                      />
                     ))}
                   </div>
 
@@ -130,7 +136,9 @@ const TestimonialsSection = () => {
                       {testimonial.avatar}
                     </div>
                     <div>
-                      <p className="font-semibold text-sm">{testimonial.name}</p>
+                      <p className="font-semibold text-sm">
+                        {testimonial.name}
+                      </p>
                       <p className="text-muted-foreground text-xs">
                         {testimonial.role} • {testimonial.country}
                       </p>

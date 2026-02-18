@@ -47,7 +47,7 @@ const FaqSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <span className="text-primary text-sm font-medium uppercase tracking-wider">
+          <span className="text-[#66B2FF] text-sm font-medium uppercase tracking-wider">
             FAQ
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mt-3">

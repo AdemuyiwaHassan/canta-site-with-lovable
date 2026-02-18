@@ -181,7 +181,13 @@ const HeroSection = () => {
                 }}
                 className="absolute -top-8 -right-8 w-16 h-16 bg-success/20 border border-success/30 rounded-2xl flex items-center justify-center"
               >
-                <span className="text-2xl">💰</span>
+                <span className="text-2xl">
+                  <img
+                    src="/asset/send3.png"
+                    alt="Coin"
+                    className="w-16 h-16"
+                  />
+                </span>
               </motion.div>
 
               <motion.div
@@ -194,7 +200,13 @@ const HeroSection = () => {
                 }}
                 className="absolute -bottom-4 -left-8 w-16 h-16 bg-primary/20 border border-primary/30 rounded-2xl flex items-center justify-center"
               >
-                <span className="text-2xl">🌍</span>
+                <span className="text-2xl">
+                  <img
+                    src="/asset/canta_globe.png"
+                    alt="Send Icon"
+                    className="w-16 h-16"
+                  />
+                </span>
               </motion.div>
             </div>
           </motion.div>

@@ -13,7 +13,8 @@ const blogPosts = [
   {
     id: 1,
     title: "The Future of Cross-Border Payments in Africa",
-    excerpt: "Exploring how fintech is revolutionizing the way Africans send and receive money across borders, and what this means for the continent's economy.",
+    excerpt:
+      "Exploring how fintech is revolutionizing the way Africans send and receive money across borders, and what this means for the continent's economy.",
     category: "Finance",
     author: "Oluwaseun Adeleke",
     date: "Jan 15, 2026",
@@ -24,7 +25,8 @@ const blogPosts = [
   {
     id: 2,
     title: "5 Tips for Safe International Money Transfers",
-    excerpt: "Learn the best practices to keep your money safe when sending funds internationally. From verification to tracking, we've got you covered.",
+    excerpt:
+      "Learn the best practices to keep your money safe when sending funds internationally. From verification to tracking, we've got you covered.",
     category: "Tips",
     author: "Amina Bello",
     date: "Jan 12, 2026",
@@ -35,7 +37,8 @@ const blogPosts = [
   {
     id: 3,
     title: "Understanding Exchange Rates: A Beginner's Guide",
-    excerpt: "Demystifying currency exchange rates and how they affect your international transfers. Learn how to get the best rates for your money.",
+    excerpt:
+      "Demystifying currency exchange rates and how they affect your international transfers. Learn how to get the best rates for your money.",
     category: "Finance",
     author: "Kwesi Asante",
     date: "Jan 10, 2026",
@@ -46,7 +49,8 @@ const blogPosts = [
   {
     id: 4,
     title: "Canta's New Multi-Currency Wallet Feature",
-    excerpt: "Announcing our latest feature that lets you hold and manage multiple currencies in one place. Perfect for travelers and international traders.",
+    excerpt:
+      "Announcing our latest feature that lets you hold and manage multiple currencies in one place. Perfect for travelers and international traders.",
     category: "News",
     author: "Canta Team",
     date: "Jan 8, 2026",
@@ -57,7 +61,8 @@ const blogPosts = [
   {
     id: 5,
     title: "How Mobile Money is Transforming African Finance",
-    excerpt: "A deep dive into the mobile money revolution across Africa and how it's creating financial inclusion for millions of unbanked individuals.",
+    excerpt:
+      "A deep dive into the mobile money revolution across Africa and how it's creating financial inclusion for millions of unbanked individuals.",
     category: "Africa",
     author: "Zainab Ibrahim",
     date: "Jan 5, 2026",
@@ -68,7 +73,8 @@ const blogPosts = [
   {
     id: 6,
     title: "Blockchain and the Future of Remittances",
-    excerpt: "Exploring how blockchain technology could reshape the remittance industry and make cross-border transfers even faster and cheaper.",
+    excerpt:
+      "Exploring how blockchain technology could reshape the remittance industry and make cross-border transfers even faster and cheaper.",
     category: "Technology",
     author: "Oluwaseun Adeleke",
     date: "Jan 2, 2026",
@@ -89,9 +95,11 @@ const Blog = () => {
   const postsInView = useInView(postsRef, { once: true, margin: "-100px" });
 
   const filteredPosts = blogPosts.filter((post) => {
-    const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    const matchesSearch =
+      post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesCategory = activeCategory === "All" || post.category === activeCategory;
+    const matchesCategory =
+      activeCategory === "All" || post.category === activeCategory;
     return matchesSearch && matchesCategory;
   });
 
@@ -103,7 +111,7 @@ const Blog = () => {
       {/* Hero Section */}
       <section ref={heroRef} className="py-24 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -111,15 +119,15 @@ const Blog = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <span className="text-primary text-sm font-medium uppercase tracking-wider">
+            <span className="text-[#66B2FF] text-sm font-medium uppercase tracking-wider">
               Our Blog
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mt-3 mb-6">
-              Insights & <span className="text-gradient">Updates</span>
+              Insights & <span className="text-primary">Updates</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Stay informed with the latest news, tips, and insights about cross-border 
-              payments and the African fintech landscape.
+              Stay informed with the latest news, tips, and insights about
+              cross-border payments and the African fintech landscape.
             </p>
           </motion.div>
 
@@ -153,7 +161,11 @@ const Blog = () => {
                 variant={activeCategory === category ? "default" : "outline"}
                 size="sm"
                 onClick={() => setActiveCategory(category)}
-                className={activeCategory === category ? "bg-gradient-primary" : "border-border"}
+                className={
+                  activeCategory === category
+                    ? "bg-gradient-primary"
+                    : "border-border"
+                }
               >
                 {category}
               </Button>
@@ -229,7 +241,10 @@ const Blog = () => {
                         {post.image}
                       </div>
                       <div className="p-6 flex flex-col flex-1">
-                        <Badge variant="outline" className="w-fit mb-3 border-border">
+                        <Badge
+                          variant="outline"
+                          className="w-fit mb-3 border-border"
+                        >
                           {post.category}
                         </Badge>
                         <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
@@ -254,7 +269,9 @@ const Blog = () => {
             </div>
           ) : (
             <div className="text-center py-16">
-              <p className="text-muted-foreground">No posts found matching your criteria.</p>
+              <p className="text-muted-foreground">
+                No posts found matching your criteria.
+              </p>
               <Button
                 variant="outline"
                 className="mt-4"
@@ -274,7 +291,11 @@ const Blog = () => {
       {regularPosts.length > 0 && (
         <section className="pb-24">
           <div className="container mx-auto px-4 text-center">
-            <Button variant="outline" size="lg" className="border-border hover:border-primary">
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-border hover:border-primary"
+            >
               Load More Articles
             </Button>
           </div>

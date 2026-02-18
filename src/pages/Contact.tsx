@@ -139,11 +139,11 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <span className="text-primary text-sm font-medium uppercase tracking-wider">
+            <span className="text-[#66B2FF] text-sm font-medium uppercase tracking-wider">
               Get in Touch
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mt-3 mb-6">
-              We'd Love to <span className="text-gradient">Hear From You</span>
+              We'd Love to <span className="text-primary">Hear From You</span>
             </h1>
             <p className="text-lg text-muted-foreground">
               Have questions about Canta? Our team is here to help. Reach out to
@@ -285,13 +285,15 @@ const Contact = () => {
               <div className="sticky top-32">
                 <div className="bg-card border border-border rounded-2xl overflow-hidden">
                   {/* Map Placeholder */}
-                  <div className="h-64 bg-muted flex items-center justify-center">
+                  <div className="h-96 bg-muted flex items-center justify-center">
                     <div className="text-center">
-                      <MapPin className="w-12 h-12 text-primary mx-auto mb-2" />
-                      <p className="text-muted-foreground">Map Integration</p>
-                      <p className="text-sm text-muted-foreground">
-                        Victoria Island, Lagos
-                      </p>
+                      {/* <MapPin className="w-12 h-12 text-primary mx-auto mb-2" /> */}
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7198737320673!2d3.4658314758697486!3d6.430021424240768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf5afba7afd3f%3A0x189b515f8374fc2b!2sPolystar%20Lekki!5e0!3m2!1sen!2sng!4v1771403752987!5m2!1sen!2sng"
+                        style={{ width: "100%", height: "100%", border: "0" }}
+                        allowFullScreen
+                        loading="lazy"
+                      ></iframe>
                     </div>
                   </div>
 
@@ -321,7 +323,7 @@ const Contact = () => {
       </section>
 
       {/* FAQ Section */}
-      <section ref={faqRef} className="py-24 bg-card/50">
+      {/* <section ref={faqRef} className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -329,7 +331,7 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <span className="text-primary text-sm font-medium uppercase tracking-wider">
+            <span className="text-[#66B2FF] text-sm font-medium uppercase tracking-wider">
               FAQ
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mt-3">
@@ -361,7 +363,7 @@ const Contact = () => {
             </Accordion>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 };

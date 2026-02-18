@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/ThemeToggle";
+// import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -81,7 +81,7 @@ const Header = () => {
 
         {/* CTA and Theme Toggle */}
         <div className="hidden md:flex items-center gap-2">
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
           <Button
             className="bg-primary hover:opacity-90 transition-opacity gap-2"
             onClick={() => window.open("https://onelink.to/9mxca2", "_blank")}
@@ -93,7 +93,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center gap-2">
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="p-2 text-foreground"

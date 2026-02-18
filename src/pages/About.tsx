@@ -68,12 +68,12 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <span className="text-primary text-sm font-medium uppercase tracking-wider">
+            <span className="text-[#66B2FF] text-sm font-medium uppercase tracking-wider">
               About Canta
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mt-3 mb-6">
               Reimagining Financial{" "}
-              <span className="text-gradient">Connections</span> Across Africa
+              <span className="text-primary">Connections</span> Across Africa
             </h1>
             <p className="text-lg text-muted-foreground">
               Born from the vision of making cross-border payments accessible to
@@ -184,7 +184,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-primary text-sm font-medium uppercase tracking-wider">
+            <span className="text-[#66B2FF] text-sm font-medium uppercase tracking-wider">
               What We Stand For
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mt-3">
@@ -223,7 +223,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-primary text-sm font-medium uppercase tracking-wider">
+            <span className="text-[#66B2FF] text-sm font-medium uppercase tracking-wider">
               Meet the Team
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mt-3">Leadership</h2>

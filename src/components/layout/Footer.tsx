@@ -16,7 +16,7 @@ const footerLinks = {
   product: [
     { name: "Features", path: "/#features" },
     { name: "How It Works", path: "/#how-it-works" },
-    { name: "Pricing", path: "/#pricing" },
+    // { name: "Pricing", path: "/#pricing" },
     { name: "Download App", path: "/#download" },
   ],
   company: [
@@ -63,7 +63,7 @@ const Footer = () => {
             <Link to="/" className="inline-block mb-6">
               <span className="text-2xl font-bold text-gradient">
                 <img
-                  src="/asset/blue-logo.svg"
+                  src="/asset/whit-logo.svg"
                   alt="Canta Logo"
                   className="h-6 w-auto"
                 />
