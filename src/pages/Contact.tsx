@@ -33,7 +33,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Call Us",
-    details: "+234 703 215 5156",
+    details: "+234 708 992 8231",
     subtext: "Mon-Fri 9am-6pm WAT",
   },
   {

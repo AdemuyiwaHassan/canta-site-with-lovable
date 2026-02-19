@@ -99,7 +99,7 @@ const About = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <p className="text-3xl md:text-4xl font-bold text-gradient">
+                <p className="text-3xl md:text-4xl font-bold text-[#66B2FF]">
                   {stat.number}
                 </p>
                 <p className="text-muted-foreground text-sm mt-2">
@@ -215,7 +215,7 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section ref={teamRef} className="py-24">
+      {/* <section ref={teamRef} className="py-24">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -255,7 +255,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 };

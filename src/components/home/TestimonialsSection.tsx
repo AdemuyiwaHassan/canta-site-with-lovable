@@ -4,50 +4,98 @@ import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const testimonials = [
+  // {
+  //   id: 1,
+  //   name: "Adaeze Okonkwo",
+  //   country: "Nigeria",
+  //   role: "Business Owner",
+  //   avatar: "AO",
+  //   rating: 5,
+  //   text: "Canta has transformed how I pay my suppliers abroad. The fees are incredibly low compared to traditional banks, and the money arrives within minutes!",
+  // },
+  // {
+  //   id: 2,
+  //   name: "Kwame Mensah",
+  //   country: "Ghana",
+  //   role: "Software Engineer",
+  //   avatar: "KM",
+  //   rating: 5,
+  //   text: "I use Canta to support my family back home. The app is so easy to use, and I love being able to track my transfers in real-time.",
+  // },
+  // {
+  //   id: 3,
+  //   name: "Amara Diallo",
+  //   country: "Senegal",
+  //   role: "Healthcare Worker",
+  //   avatar: "AD",
+  //   rating: 5,
+  //   text: "Finally, a payment app that understands African needs! Multiple currency support and instant transfers make Canta my go-to for all international payments.",
+  // },
+  // {
+  //   id: 4,
+  //   name: "Tendai Moyo",
+  //   country: "Zimbabwe",
+  //   role: "Freelancer",
+  //   avatar: "TM",
+  //   rating: 5,
+  //   text: "As a freelancer working with international clients, Canta makes receiving payments seamless. Best rates I've found anywhere!",
+  // },
+  // {
+  //   id: 5,
+  //   name: "Fatou Sow",
+  //   country: "Ivory Coast",
+  //   role: "Student",
+  //   avatar: "FS",
+  //   rating: 5,
+  //   text: "My parents send me money for school through Canta. It's fast, reliable, and the customer support is excellent when I need help.",
+  // },
   {
     id: 1,
-    name: "Adaeze Okonkwo",
-    country: "Nigeria",
-    role: "Business Owner",
-    avatar: "AO",
+    name: "Ebi B",
+    avatar: "EB",
     rating: 5,
-    text: "Canta has transformed how I pay my suppliers abroad. The fees are incredibly low compared to traditional banks, and the money arrives within minutes!",
+    company: "Bamboo",
+    logoUrl: "/logos/eden-logo-blue.svg",
+    imgUrl: "/images/canta-user.svg",
+    imgAlt: "canta customer",
+    comment:
+      "I have found Canta services to be reliable in foreign currency exchange. They delivered exactly when they promised to delivery",
   },
   {
     id: 2,
-    name: "Kwame Mensah",
-    country: "Ghana",
-    role: "Software Engineer",
-    avatar: "KM",
+    name: "Abiodun A.",
+    avatar: "AA",
     rating: 5,
-    text: "I use Canta to support my family back home. The app is so easy to use, and I love being able to track my transfers in real-time.",
+    company: "JAAD",
+    logoUrl: "/logos/eden-logo-blue.svg",
+    imgUrl: "/images/canta-user.svg",
+    imgAlt: "canta customer",
+    comment:
+      "It was recommended for me while I was trying to get a house in the UK and the experience when I used it was great.",
   },
   {
     id: 3,
-    name: "Amara Diallo",
-    country: "Senegal",
-    role: "Healthcare Worker",
-    avatar: "AD",
+    name: "Ibrahim A.",
+    avatar: "IA",
     rating: 5,
-    text: "Finally, a payment app that understands African needs! Multiple currency support and instant transfers make Canta my go-to for all international payments.",
+    company: "Rayiea Nigeria",
+    logoUrl: "/logos/eden-logo-blue.svg",
+    imgUrl: "/images/canta-user.svg",
+    imgAlt: "canta customer",
+    comment:
+      "It was really good when I used it, though for a while I have not used it because the need for it hasn't come up. You can introduce a wallet system. Would be willing to recommend",
   },
   {
     id: 4,
-    name: "Tendai Moyo",
-    country: "Zimbabwe",
-    role: "Freelancer",
-    avatar: "TM",
+    name: "Akan",
+    avatar: "A",
     rating: 5,
-    text: "As a freelancer working with international clients, Canta makes receiving payments seamless. Best rates I've found anywhere!",
-  },
-  {
-    id: 5,
-    name: "Fatou Sow",
-    country: "Ivory Coast",
-    role: "Student",
-    avatar: "FS",
-    rating: 5,
-    text: "My parents send me money for school through Canta. It's fast, reliable, and the customer support is excellent when I need help.",
+    company: "Eden Life",
+    logoUrl: "/logos/eden-logo-blue.svg",
+    imgUrl: "/images/canta-user.svg",
+    imgAlt: "canta customer",
+    comment:
+      "Access Canta's services seamlessly, whether you're sending money to friends or family overseas, paying for goods and services online, or buying and selling foreign currency. Our on-ground personnel are available to help you process transactions safely and securely.",
   },
 ];
 
@@ -114,10 +162,10 @@ const TestimonialsSection = () => {
                     index === 1 ? "md:scale-105 border-primary/30" : ""
                   }`}
                 >
-                  <Quote className="w-8 h-8 text-primary/30 mb-4" />
+                  <Quote className="w-8 h-8 text-primary/70 mb-4" />
 
                   <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                    "{testimonial.text}"
+                    "{testimonial.comment}"
                   </p>
 
                   {/* Rating */}
@@ -140,7 +188,7 @@ const TestimonialsSection = () => {
                         {testimonial.name}
                       </p>
                       <p className="text-muted-foreground text-xs">
-                        {testimonial.role} • {testimonial.country}
+                        {testimonial.company}
                       </p>
                     </div>
                   </div>
