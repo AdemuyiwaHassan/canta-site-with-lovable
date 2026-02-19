@@ -6,6 +6,7 @@ import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { FaApple } from "react-icons/fa";
 import Lottie from "lottie-react";
 import Video from "./video.json";
+import Video1 from "./video1.json";
 
 const benefits = [
   "No hidden fees or charges",
@@ -115,7 +116,7 @@ const DownloadCTASection = () => {
                 {/* Phone Stack Effect */}
                 <div className="relative ">
                   <Lottie
-                    animationData={Video}
+                    animationData={Video1}
                     loop
                     autoplay
                     style={{ width: "15rem", height: "auto" }}

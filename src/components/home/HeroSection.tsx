@@ -179,7 +179,7 @@ const HeroSection = () => {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="absolute -top-8 -right-8 w-16 h-16 bg-success/20 border border-success/30 rounded-2xl flex items-center justify-center"
+                className="absolute -top-8 -right-8 w-16 h-16 bg-primary/20 border border-primary/30 rounded-2xl flex items-center justify-center"
               >
                 <span className="text-2xl">
                   <img

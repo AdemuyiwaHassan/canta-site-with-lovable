@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Coins, Zap, Globe, Shield } from "lucide-react";
-import CoinIcon from "@/asset/Coins.png";
+// import { Coins, Zap, Globe, Shield } from "lucide-react";
+import { Coin, Fast, Send, Security } from "@/icons";
 
 const features = [
   {
-    icon: Coins,
+    icon: Coin,
     title: "Low Transfer Fees",
     description:
       "Save more with our competitive rates. No hidden charges, just transparent pricing for every transaction.",
@@ -14,7 +14,7 @@ const features = [
     bgColor: "bg-success/10",
   },
   {
-    icon: Zap,
+    icon: Fast,
     title: "Fast Transactions",
     description:
       "Send money in minutes, not days. Our instant transfer technology ensures your funds arrive quickly.",
@@ -22,7 +22,7 @@ const features = [
     bgColor: "bg-primary/10",
   },
   {
-    icon: Globe,
+    icon: Send,
     title: "Multi-Currency Support",
     description:
       "Transfer in 50+ currencies across the globe. Seamless conversions at the best exchange rates.",
@@ -30,7 +30,7 @@ const features = [
     bgColor: "bg-secondary/10",
   },
   {
-    icon: Shield,
+    icon: Security,
     title: "Secure & Compliant",
     description:
       "Bank-grade security with end-to-end encryption. Licensed and regulated for your peace of mind.",
