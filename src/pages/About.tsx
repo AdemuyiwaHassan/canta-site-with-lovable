@@ -6,7 +6,7 @@ import { Target, Heart, Users, Globe, Award, TrendingUp } from "lucide-react";
 const stats = [
   { number: "$2B+", label: "Transactions Processed" },
   { number: "100K+", label: "Active Users" },
-  { number: "50+", label: "Countries Supported" },
+  { number: "120+", label: "Countries Supported" },
   { number: "99.9%", label: "Uptime Reliability" },
 ];
 
